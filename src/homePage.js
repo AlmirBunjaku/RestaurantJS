@@ -8,7 +8,7 @@ function homePage() {
     welcomeTextContainer.id = 'welcome-text-container';
     const welcomeText = document.createElement('h1');
     welcomeText.id = 'welcome-text';
-    welcomeText.textContent = 'Welcome to Folsom & Rutland!';
+    welcomeText.textContent = 'Welcome to The Everett!';
 
     welcomeTextContainer.appendChild(welcomeText);
     mainContent.appendChild(welcomeTextContainer);

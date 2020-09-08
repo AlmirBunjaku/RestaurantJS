@@ -1,5 +1,6 @@
 import { homePage } from './homePage';
 import { contactPage } from './contactPage';
+import { menuPage } from './menuPage';
 
 function navBar() {
     const content = document.querySelector('#content');
