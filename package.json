@@ -1,30 +1,32 @@
 {
-  "name": "restaurantjs",
-  "version": "1.0.0",
-  "description": "Dynamically rendered restaurant page",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlmirBunjaku/RestaurantJS.git"
-  },
-  "keywords": [
-    "restaurant"
-  ],
-  "author": "AlmirBunjaku <almirbunjaku@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlmirBunjaku/RestaurantJS/issues"
-  },
-  "homepage": "https://github.com/AlmirBunjaku/RestaurantJS#readme",
-  "devDependencies": {
-    "css-loader": "^4.2.2",
-    "file-loader": "^6.1.0",
-    "html-loader": "^1.3.0",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
-  }
+    "name": "restaurantjs",
+    "version": "1.0.0",
+    "description": "Dynamically rendered restaurant page",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlmirBunjaku/RestaurantJS.git"
+    },
+    "keywords": [
+        "restaurant"
+    ],
+    "author": "AlmirBunjaku <almirbunjaku@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlmirBunjaku/RestaurantJS/issues"
+    },
+    "homepage": "https://github.com/AlmirBunjaku/RestaurantJS#readme",
+    "devDependencies": {
+        "css-loader": "^4.2.2",
+        "file-loader": "^6.1.0",
+        "html-loader": "^1.3.0",
+        "line-awesome": "^1.3.0",
+        "style-loader": "^1.2.1",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    },
+    "dependencies": {}
 }
