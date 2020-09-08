@@ -1,1 +1,4 @@
-console.log('Hello, world!');
+import { navBar } from './navBar';
+import { homePage } from './homePage';
+navBar();
+homePage();
