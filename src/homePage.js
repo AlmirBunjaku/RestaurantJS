@@ -6,11 +6,15 @@ function homePage() {
 
     const welcomeTextContainer = document.createElement('div');
     welcomeTextContainer.id = 'welcome-text-container';
-    const welcomeText = document.createElement('h1');
-    welcomeText.id = 'welcome-text';
-    welcomeText.textContent = 'Welcome to The Everett!';
+    const title = document.createElement('h1');
+    title.id = 'title';
+    title.textContent = 'THE CRESCENT';
+    const subtitle = document.createElement('h2');
+    subtitle.id = 'subtitle';
+    subtitle.textContent = 'EST. 1896';
 
-    welcomeTextContainer.appendChild(welcomeText);
+    welcomeTextContainer.appendChild(title);
+    welcomeTextContainer.appendChild(subtitle);
     mainContent.appendChild(welcomeTextContainer);
     content.appendChild(mainContent);
 }

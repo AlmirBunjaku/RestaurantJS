@@ -5,9 +5,13 @@ import { menuPage } from './menuPage';
 function navBar() {
     const content = document.querySelector('#content');
 
+    const navBarContainer = document.createElement('div');
+    navBarContainer.id = 'nav-bar-container';
+    content.appendChild(navBarContainer);
+
     const navBar = document.createElement('ul');
     navBar.id = 'nav-bar';
-    content.appendChild(navBar);
+    navBarContainer.appendChild(navBar);
 
     const home = document.createElement('li');
     home.id = 'home';
@@ -31,30 +35,22 @@ function navBar() {
     navLinks.forEach((link) => {
         link.addEventListener('click', () => {
             const mainContent = document.querySelector('#main-content');
+            navLinks.forEach((navLink) => {
+                navLink.style.borderBottom = '1px solid transparent';
+            })
             if (link.textContent == 'Home') {
                 mainContent.remove();
                 homePage();
+                document.querySelector('#home').style.borderBottom = '1px solid hsl(50,50%,50%)';
             } else if (link.textContent == 'Menu') {
                 mainContent.remove();
                 menuPage();
+                document.querySelector('#menu').style.borderBottom = '1px solid hsl(50,50%,50%)';
             } else if (link.textContent == 'Contact') {
                 mainContent.remove();
                 contactPage();
+                document.querySelector('#contact').style.borderBottom = '1px solid hsl(50,50%,50%)';
             }
-        })
-        link.addEventListener('mouseover', () => {
-            link.className = 'hoveredLink';
-            const pageLinks = document.querySelectorAll('.nav-link');
-            pageLinks.forEach((text) => {
-                text.style.color = 'hsl(0,100%,50%)';
-            })
-        })
-        link.addEventListener('mouseout', () => {
-            const pageLinks = document.querySelectorAll('.nav-link');
-            pageLinks.forEach((text) => {
-                text.style.color = 'hsl(0,100%,0%)';
-            })
-            link.className = 'nav-link';
         })
     })
 }

@@ -4,11 +4,6 @@ function contactPage() {
     const mainContent = document.createElement('div');
     mainContent.id = 'main-content';
 
-    const contactHeading = document.createElement('h1');
-    contactHeading.id = 'contact-heading';
-    contactHeading.textContent = 'Contact';
-    mainContent.appendChild(contactHeading);
-
     const contactContainer = document.createElement('div');
     contactContainer.id = 'contact-container';
 
@@ -17,13 +12,13 @@ function contactPage() {
     githubLink.setAttribute('href', 'https://github.com/AlmirBunjaku');
     githubLink.textContent = 'Github';
 
-    const mailLink = document.createElement('a');
-    mailLink.id = 'mail-link';
-    mailLink.setAttribute('href', 'mailto:almirbunjaku@gmail.com');
-    mailLink.textContent = 'Mail';
+    const emailLink = document.createElement('a');
+    emailLink.id = 'email-link';
+    emailLink.setAttribute('href', 'mailto:almirbunjaku@gmail.com');
+    emailLink.textContent = 'Email';
 
     contactContainer.appendChild(githubLink);
-    contactContainer.appendChild(mailLink);
+    contactContainer.appendChild(emailLink);
     mainContent.appendChild(contactContainer);
     content.appendChild(mainContent);
 }
