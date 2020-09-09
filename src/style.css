@@ -115,3 +115,26 @@ a:visited {
 a:visited:hover {
     color: hsl(50, 50%, 50%);
 }
+
+@media only screen and (max-width: 600px) {
+    #nav-bar-container {
+        height: fit-content;
+    }
+    ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: fit-content;
+    }
+    #welcome-text-container {
+        width: 100%;
+    }
+    #title {
+        font-size: 36px;
+    }
+    #subtitle {
+        font-size: 18px;
+    }
+    #contact-container {
+        width: 100%;
+    }
+}
